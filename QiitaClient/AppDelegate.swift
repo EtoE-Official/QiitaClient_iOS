@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  QiitaClient
 //
-//  Created by YoshimiHiromu on 2019/06/02.
+//  Created by hiring on 2019/06/02.
 //  Copyright © 2019 hiring. All rights reserved.
 //
 
