@@ -6,6 +6,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         
         let nib = UINib(nibName: "QiitaTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "QiitaTableViewCell")
@@ -24,5 +25,13 @@ extension ViewController: UITableViewDataSource {
         }
         cell.set(title: "タイトル\(indexPath.row)", author: "作成者")
         return cell
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "WebViewController", bundle: nil)
+        let webViewController = storyboard.instantiateInitialViewController() as! WebViewController
+        navigationController?.pushViewController(webViewController, animated: true)
     }
 }
