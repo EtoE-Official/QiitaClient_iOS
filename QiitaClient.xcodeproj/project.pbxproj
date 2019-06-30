@@ -11,6 +11,7 @@
 		AD38F47B22B649290050CEAF /* QiitaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38F47A22B649290050CEAF /* QiitaTableViewCell.swift */; };
 		AD71949222C85E8E00CFBE81 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71949122C85E8E00CFBE81 /* WebViewController.swift */; };
 		AD71949422C85F5A00CFBE81 /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD71949322C85F5A00CFBE81 /* WebViewController.storyboard */; };
+		AD71949722C8829100CFBE81 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71949622C8829100CFBE81 /* WebKit.framework */; };
 		ADA6B02922A3F3AE0034F3B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6B02822A3F3AE0034F3B7 /* AppDelegate.swift */; };
 		ADA6B02B22A3F3AE0034F3B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6B02A22A3F3AE0034F3B7 /* ViewController.swift */; };
 		ADA6B02E22A3F3AE0034F3B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA6B02C22A3F3AE0034F3B7 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		AD38F47A22B649290050CEAF /* QiitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaTableViewCell.swift; sourceTree = "<group>"; };
 		AD71949122C85E8E00CFBE81 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		AD71949322C85F5A00CFBE81 /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
+		AD71949622C8829100CFBE81 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		ADA6B02522A3F3AE0034F3B7 /* QiitaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA6B02822A3F3AE0034F3B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA6B02A22A3F3AE0034F3B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD71949722C8829100CFBE81 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD71949522C8829000CFBE81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD71949622C8829100CFBE81 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ADA6B01C22A3F3AE0034F3B7 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +100,7 @@
 				ADA6B03C22A3F3AF0034F3B7 /* QiitaClientTests */,
 				ADA6B04722A3F3AF0034F3B7 /* QiitaClientUITests */,
 				ADA6B02622A3F3AE0034F3B7 /* Products */,
+				AD71949522C8829000CFBE81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
